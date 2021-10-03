@@ -1,0 +1,25 @@
+{
+  "name": "auth-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon index.js",
+    "test": "npx cypress run",
+    "test-gui": "npx cypress open --config watchForFileChanges=true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.7"
+  },
+  "devDependencies": {
+    "cypress": "^8.4.0",
+    "guid": "0.0.12",
+    "nodemon": "^2.0.12"
+  }
+}
