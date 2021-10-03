@@ -9,5 +9,12 @@ class DataValidation {
     });
     return validationSchema.validate(request);
   }
+  static loginValidation(request) {
+    const validationSchema = Joi.object({
+      email: Joi.string().min(3).required().email(),
+      password: Joi.string().min(6).required(),
+    });
+    return validationSchema.validate(request);
+  }
 }
 module.exports = { DataValidation };
